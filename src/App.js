@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import FoodTypeTile from "./components/FoodTypeTile/FoodTypeTile";
+import FoodTileContainer from "./components/FoodTypeTile/FoodTileContainer";
+import MainLogo from "./components/NavBar/MainLogo";
+import UpperNavBar from "./components/NavBar/UpperNavBar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UpperNavBar />
+      <FoodTileContainer />
     </div>
   );
 }
